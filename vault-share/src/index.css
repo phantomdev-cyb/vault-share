@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Security Layer for UI: Prevent text selection on non-inputs */
+body {
+  @apply bg-vault-900 text-slate-200;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar Customization for professional feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-vault-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-vault-700 rounded-full;
+}
